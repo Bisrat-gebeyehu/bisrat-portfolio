@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisrat Zinabu Gebeyehu | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19; /* Calm dark background */
+            color: #e2e8f0;
+        }
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Subtle network grid effect background */
+        .grid-bg {
+            background-image: linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen selection:bg-emerald-500/30 selection:text-emerald-400 grid-bg">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/60 transition-all">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" onclick="showPage('home')" class="font-mono text-emerald-400 font-bold tracking-wider text-lg">BISRAT</a>
+            <nav class="flex space-x-8 text-sm font-medium text-slate-400">
+                <button onclick="showPage('home')" id="nav-home" class="hover:text-emerald-400 text-emerald-400 transition-colors">Portfolio</button>
+                <button onclick="showPage('blog')" id="nav-blog" class="hover:text-emerald-400 transition-colors">Technical Blog</button>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6">
+
+        <div id="page-home" class="space-y-16 py-12">
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open for Collaborations & Roles
+                    </div>
+                    <h1 class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-100 leading-tight">
+                        System Administrator <span class="text-emerald-400">|</span> Infrastructure Engineer <span class="text-emerald-400">|</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">IT Operations expert</span>
+                    </h1>
+                    <p class="text-slate-400 text-base max-w-xl leading-relaxed">
+                        I administer systems, Networks, On-Premises and Cloud Infrastructures, and deliver tier-1 to tier-3 Enterprise Technical Support. I engineer uptime, optimize system workflows, and automate configurations.
+                    </p>
+                    
+                    <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-3">
+                        <div class="flex flex-wrap gap-2">
+                            <button onclick="selectTrack('sysadmin')" id="btn-sysadmin" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 font-medium">System Administration</button>
+                            <button onclick="selectTrack('infra')" id="btn-infra" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">Infrastructure Eng.</button>
+                            <button onclick="selectTrack('ops')" id="btn-ops" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">IT Operations & Support</button>
+                        </div>
+                        
+                        <div id="track-desc" class="text-sm text-slate-300 font-mono mt-2 bg-slate-950/60 p-3 rounded border border-slate-900 min-h-[80px] leading-relaxed">
+                            Active track profile highlights: 4 years managing Linux (Ubuntu/CentOS) and Windows Server environments. Specialized in Active Directory, Microsoft 365 migration, automated system patching, user provisioning, access control lists, network shares, and server volume storage management.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative flex justify-center items-center h-full bg-slate-900/40 rounded-xl border border-slate-800/80 p-6 overflow-hidden">
+                    <div class="relative w-full font-mono text-xs text-slate-500 bg-slate-950/80 p-4 rounded border border-slate-800 shadow-2xl space-y-2">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+                            <span class="text-slate-400 font-semibold">sys_monitor.sh</span>
+                            <div class="flex space-x-1.5">
+                                <span class="w-2 h-2 rounded-full bg-red-500/60"></span>
+                                <span class="w-2 h-2 rounded-full bg-yellow-500/60"></span>
+                                <span class="w-2 h-2 rounded-full bg-emerald-500/60"></span>
+                            </div>
+                        </div>
+                        <p class="text-emerald-500/90">$ packet_loss --check core-router-01</p>
+                        <p class="text-slate-400">PING core-router-01 (10.0.1.1): 56 data bytes</p>
+                        <p class="text-slate-400">64 bytes from 10.0.1.1: icmp_seq=0 ttl=64 time=0.421 ms</p>
+                        <p class="text-emerald-400">>> Status: 0% loss / Network Nominal</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-slate-950/60 border border-slate-800 rounded-lg p-6 font-mono text-sm shadow-xl">
+                    <div class="flex items-center gap-2 mb-4 text-slate-500 text-xs border-b border-slate-900 pb-2">
+                        <span>⚡ bash session</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-slate-200">whoami</span>
+                                <p class="text-slate-300 mt-1">Bisrat Zinabu Gebeyehu</p>
+                            </div>
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-slate-200">info --role</span>
+                                <p class="text-slate-400 mt-1">SysAdmin | Infrastructure | IT Ops</p>
+                            </div>
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-slate-200">curl ipinfo.io/location</span>
+                                <p class="text-slate-400 mt-1">Poland 🇵🇱</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-slate-200">sysctl --get tech-stack</span>
+                                <p class="text-slate-400 mt-1">Linux • Systems • Hybrid Cloud • Automation</p>
+                            </div>
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-slate-200">cat availability.txt</span>
+                                <p class="text-emerald-400 mt-1 font-semibold">Open to Collaboration & Interviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h3 class="text-lg font-mono text-emerald-400">// Core Engineering Domains</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">System Administrator</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Managing dual Linux and Windows environments. Hardening Active Directory topologies, maintaining Microsoft 365 environments, orchestration of server patches, security compliance policies, and complex storage arrays.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Technical Operations Manager</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Aligning technical ecosystems with business goals. Organizing root cause data, optimizing infrastructure workflows, enforcing high-availability parameters, and ensuring ITIL best practices for system delivery.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Network Expert</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Engineering multi-layered corporate networking clusters. Deploying enterprise-grade SD-WAN solutions, designing hybrid secure VPN configurations, and resolving runtime structural system anomalies.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                        <div>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Cloud & Infrastructure Engineer</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Provisioning scalable, fault-tolerant infrastructure maps. Orchestrating AWS/Azure infrastructure stacks, configuring local hypervisors (VMware ESXi, Proxmox clustering), and deploying declarative Infrastructure as Code via Terraform.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-2">
+                        <div>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Tier 1 / 2 / 3 Technical Support</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Direct user interaction transforming high-level business issues into root-cause technical updates. Diagnostics spanning system clusters, direct client resolutions, high-availability data logging (Zabbix/Grafana), and rapid outage mitigation protocols.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="page-blog" class="space-y-12 py-12 hidden">
+            <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl p-6">
+                <div class="flex items-center gap-3 mb-2">
+                    <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-mono text-xs font-bold">WEEKLY SYSLOG</span>
+                    <h3 class="text-slate-200 font-bold font-mono">Hello Weekend! What's New?</h3>
+                </div>
+                <p class="text-slate-400 text-sm">
+                    Every Saturday/Sunday, I update this production log detailing the system tweaks, networking runbooks, and automation scripts developed during my current stack sprints.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-1">// Production Notebooks & Playbooks</h2>
+                <h3 class="text-2xl font-bold tracking-tight text-slate-100">Engineering Documentation Logs</h3>
+                <p class="text-slate-500 text-xs mt-1 font-mono">Click on any document header to expand execution breakdowns.</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(1)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">How I configured IPsec on Ubuntu</span>
+                        <span id="icon-1" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-1" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Complete deployment log for site-to-site IPsec architecture utilizing StrongSwan on Ubuntu Server LTS instances. Detailed parameter choices for Phase 1 and Phase 2 key exchanges.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: VPN / Ubuntu</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Code Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(2)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">OpenVPN Implementation on pfSense Architecture</span>
+                        <span id="icon-2" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-2" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Configuring isolated road-warrior client groups using secure cryptographic protocols, routing tables, and client configuration overrides on production enterprise pfSense appliances.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Security / Firewall</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(3)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">WireGuard Performance Tuning on Linux Instances</span>
+                        <span id="icon-3" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-3" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>A benchmark breakdown comparing cryptographic payload throughput of kernel-space WireGuard installations versus traditional implementations on system clusters.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Networking / Linux</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Configs &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(4)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Deploying Production-Ready Docker Containers with Ansible</span>
+                        <span id="icon-4" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-4" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Playbook templates detailing multi-host docker deployments, reverse proxy integrations, volume mappings, and container lifecycle monitoring variables.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Automation / Ansible</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Download Playbooks &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(5)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Understanding BGP: Core Routing Protocols Explored</span>
+                        <span id="icon-5" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-5" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Architectural log outlining autonomous system path attributes, peerings, and policy maps inside ISP simulation spaces.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: ISP Networking / Protocols</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Lab &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(6)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">LAN Network Troubleshooting: A Structured Level 2/3 Guide</span>
+                        <span id="icon-6" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-6" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>A step-by-step analytical checklist to isolate operational layers, trace packet data, and remediate broadcast storms or loop errors within enterprise infrastructure topologies.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Technical Support</span>
+                            <a href="https://www.linkedin.com/in/bisrat-g-7386b6196/" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Discuss on LinkedIn &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(7)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Setting up a High-Availability Proxmox Cluster</span>
+                        <span id="icon-7" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-7" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Detailed steps regarding hyper-converged architectures using Ceph shared storage pools, corosync configurations, and instant node fencing rules.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Virtualization</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Topology &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(8)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Terraform Basics: Multi-Cloud Infrastructure as Code</span>
+                        <span id="icon-8" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-8" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Declarative configuration matrices provisioning secure VPC networks across public cloud architectures, maintaining clear environment separation states.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Cloud / IaC</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Tf Templates &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(9)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">AWS IAM Explained: Managing Privileges & System Hardening</span>
+                        <span id="icon-9" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-9" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Best practices implementing least privilege paradigms, IAM role assumptions for automated agents, and auditing policy metrics.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Cloud Security</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Rules &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(10)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Linux Commands I Use Every Day as a System Administrator</span>
+                        <span id="icon-10" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-10" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>A reference breakdown utilizing modern troubleshooting utilities (`journalctl`, `htop`, `ss`, `lsof`, `rsync`) for fast infrastructure triage.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Linux Essentials</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Gist Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(11)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">100 Bash Tips for Automation and Server Maintenance</span>
+                        <span id="icon-11" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-11" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>An extensive syntax library detailing control statements, stream handling, configuration updates, and parsing logs efficiently.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Automation / Bash</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Raw Scripts &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(12)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Troubleshooting DNS: From Local Cache to Root Nameservers</span>
+                        <span id="icon-12" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-12" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>Resolution playbook debugging stale lookup responses across corporate nodes using utility flags to pinpoint propagation delays.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: IT Operations</span>
+                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Runbook &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <hr class="border-slate-900 my-16">
+
+        <section id="contact" class="pb-24 scroll-mt-20">
+            <div class="mb-8">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2">// Interconnect Portal</h2>
+                <h3 class="text-2xl font-bold tracking-tight text-slate-100">Let's Connect for Collaboration</h3>
+                <p class="text-slate-400 mt-2 text-sm max-w-xl leading-relaxed">
+                    Looking for an updated copy of my resume, or want to explore systemic deployment scenarios? Reach out through my official channels below.
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto md:mx-0 font-mono text-sm space-y-4">
+                <a href="mailto:gebeyehubisratz@gmail.com?subject=Infrastructure%20and%20Operations%20Collaboration" class="p-5 bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/30 rounded-xl hover:border-emerald-400 hover:bg-emerald-500/15 text-emerald-400 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl group">
+                    <div>
+                        <span class="font-bold block text-base text-slate-200 group-hover:text-emerald-400 transition-colors">[ Send Email ]</span>
+                        <span class="text-xs text-slate-400 mt-1 font-mono">gebeyehubisratz@gmail.com</span>
+                    </div>
+                    <span class="text-xs px-3 py-1.5 rounded border border-emerald-500/30 bg-slate-950 text-emerald-400">Launch Mail Client &rarr;</span>
+                </a>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://www.linkedin.com/in/bisrat-g-7386b6196/" target="_blank" class="p-4 bg-slate-950 border border-slate-900 rounded-lg hover:border-emerald-500/20 hover:bg-slate-900/20 text-slate-300 transition-all">
+                        <span class="text-emerald-400 block mb-1">LinkedIn</span>
+                        Connect professionally &rarr;
+                    </a>
+                    
+                    <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="p-4 bg-slate-900/40 border border-slate-800/80 rounded-lg hover:border-emerald-500/30 hover:bg-slate-800/20 text-slate-300 transition-all">
+                        <span class="text-emerald-400 block mb-1">GitHub</span>
+                        Review Code Labs &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-900 bg-slate-950/40">
+        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-slate-500 gap-4">
+            <p>&copy; 2026 Bisrat Zinabu Gebeyehu. Located in Poland 🇵🇱</p>
+            <p class="text-slate-600">Pure Semantic Workspace Engineering</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching logic for pages
+        function showPage(pageId) {
+            document.getElementById('page-home').classList.add('hidden');
+            document.getElementById('page-blog').classList.add('hidden');
+            document.getElementById('nav-home').classList.remove('text-emerald-400');
+            document.getElementById('nav-blog').classList.remove('text-emerald-400');
+
+            document.getElementById('page-' + pageId).classList.remove('hidden');
+            document.getElementById('nav-' + pageId).classList.add('text-emerald-400');
+            window.scrollTo(0,0);
+        }
+
+        // Expandable Blog Accordion Functionality
+        function toggleBlog(id) {
+            const block = document.getElementById('content-' + id);
+            const icon = document.getElementById('icon-' + id);
+            if(block.classList.contains('hidden')) {
+                block.classList.remove('hidden');
+                icon.innerText = "−";
+            } else {
+                block.classList.add('hidden');
+                icon.innerText = "+";
+            }
+        }
+
+        // Track data data matrix mapping
+        const trackData = {
+            sysadmin: "Active track profile highlights: 4 years managing Linux (Ubuntu/CentOS) and Windows Server environments. Specialized in Active Directory, Microsoft 365 migration, automated system patching, user provisioning, access control lists, network shares, and server volume storage management.",
+            infra: "Active track profile highlights: Designing on-premises, redundant, and hybrid infrastructure deployments. Provisioning infrastructure components via public cloud stacks (AWS/Azure), hybrid VPN configurations, IAM least-privilege configurations, SD-WAN networks, VPC planning, hypervisors (VMware ESXi, Proxmox clustering), and custom declarative Terraform templates.",
+            ops: "Active track profile highlights: Orchestration of high-availability monitoring stacks (Zabbix, Grafana, Prometheus). Comprehensive incident management response, problem management, ITIL service design, and systematic Tier 1, 2, and 3 technical support execution. Managing straightforward helpdesk routing up to complex cross-platform environment diagnostics."
+        };
+
+        function selectTrack(trackKey) {
+            document.querySelectorAll('.track-btn').forEach(btn => {
+                btn.classList.remove('border-emerald-500/40', 'bg-emerald-500/10', 'text-emerald-400');
+                btn.classList.add('border-slate-800', 'bg-slate-950', 'text-slate-400');
+            });
+            const targetBtn = document.getElementById('btn-' + trackKey);
+            targetBtn.classList.remove('border-slate-800', 'bg-slate-950', 'text-slate-400');
+            targetBtn.classList.add('border-emerald-500/40', 'bg-emerald-500/10', 'text-emerald-400');
+            
+            document.getElementById('track-desc').innerText = trackData[trackKey];
+        }
+    </script>
+</body>
+</html>
