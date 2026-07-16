@@ -30,7 +30,11 @@
 
     <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/60 transition-all">
         <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" onclick="showPage('home')" class="font-mono text-emerald-400 font-bold tracking-wider text-lg">BISRAT</a>
+            <a href="#" onclick="showPage('home')" class="flex items-center gap-2 font-mono text-emerald-400 font-bold tracking-wider text-lg">
+                <!-- Change "photo.jpg" below to your exact file name or path if needed -->
+                <img src="photo.jpg" alt="Bisrat profile icon" class="w-7 h-7 rounded-full object-cover border border-emerald-500/30">
+                <span>BISRAT</span>
+            </a>
             <nav class="flex space-x-8 text-sm font-medium text-slate-400">
                 <button onclick="showPage('home')" id="nav-home" class="hover:text-emerald-400 text-emerald-400 transition-colors">Portfolio</button>
                 <button onclick="showPage('blog')" id="nav-blog" class="hover:text-emerald-400 transition-colors">Technical Blog</button>
@@ -45,24 +49,24 @@
             <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open for Collaborations & Roles
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Eager to Learn & Expand IT Infrastructure Knowledge
                     </div>
                     <h1 class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-100 leading-tight">
-                        System Administrator <span class="text-emerald-400">|</span> Infrastructure Engineer <span class="text-emerald-400">|</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">IT Operations expert</span>
+                        System Administrator <span class="text-emerald-400">|</span> Infrastructure Engineer <span class="text-emerald-400">|</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">IT Operations Specialist</span>
                     </h1>
                     <p class="text-slate-400 text-base max-w-xl leading-relaxed">
-                        I administer systems, Networks, On-Premises and Cloud Infrastructures, and deliver tier-1 to tier-3 Enterprise Technical Support. I engineer uptime, optimize system workflows, and automate configurations.
+                        I support hybrid system workflows, manage core networks, and administer enterprise virtualization stacks. I am highly focused on investigating system anomalies, optimizing services, and building stable physical, virtualized, and cloud-based environments.
                     </p>
                     
                     <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-3">
                         <div class="flex flex-wrap gap-2">
                             <button onclick="selectTrack('sysadmin')" id="btn-sysadmin" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 font-medium">System Administration</button>
                             <button onclick="selectTrack('infra')" id="btn-infra" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">Infrastructure Eng.</button>
-                            <button onclick="selectTrack('ops')" id="btn-ops" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">IT Operations & Support</button>
+                            <button onclick="selectTrack('ops')" id="btn-ops" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">IT Support & Operations</button>
                         </div>
                         
                         <div id="track-desc" class="text-sm text-slate-300 font-mono mt-2 bg-slate-950/60 p-3 rounded border border-slate-900 min-h-[80px] leading-relaxed">
-                            Active track profile highlights: Infrastructure engineering with expertise in Linux administration, virtualization, storage, networking, automation, and monitoring across on-premises, cloud, and data center environments. Experienced supporting Windows Server, Active Directory, and Microsoft 365.
+                            Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability.
                         </div>
                     </div>
                 </div>
@@ -85,71 +89,37 @@
                 </div>
             </section>
 
-            <section>
-                <div class="bg-slate-950/60 border border-slate-800 rounded-lg p-6 font-mono text-sm shadow-xl">
-                    <div class="flex items-center gap-2 mb-4 text-slate-500 text-xs border-b border-slate-900 pb-2">
-                        <span>⚡ bash session</span>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="space-y-2">
-                            <div>
-                                <span class="text-emerald-400">$</span> <span class="text-slate-200">whoami</span>
-                                <p class="text-slate-300 mt-1">Bisrat Zinabu Gebeyehu</p>
-                            </div>
-                            <div>
-                                <span class="text-emerald-400">$</span> <span class="text-slate-200">info --role</span>
-                                <p class="text-slate-400 mt-1">SysAdmin | Infrastructure | IT Ops</p>
-                            </div>
-                            <div>
-                                <span class="text-emerald-400">$</span> <span class="text-slate-200">curl ipinfo.io/location</span>
-                                <p class="text-slate-400 mt-1">Poland 🇵🇱</p>
-                            </div>
-                        </div>
-                        <div class="space-y-2">
-                            <div>
-                                <span class="text-emerald-400">$</span> <span class="text-slate-200">sysctl --get tech-stack</span>
-                                <p class="text-slate-400 mt-1">Linux • Systems • Hybrid Cloud • Automation</p>
-                            </div>
-                            <div>
-                                <span class="text-emerald-400">$</span> <span class="text-slate-200">cat availability.txt</span>
-                                <p class="text-emerald-400 mt-1 font-semibold">Open to Collaboration & Interviews</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="space-y-4">
                 <h3 class="text-lg font-mono text-emerald-400">// Core Engineering Domains</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">System Administrator</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Managing dual Linux and Windows environments. Hardening Active Directory topologies, maintaining Microsoft 365 environments, orchestration of server patches, security compliance policies, and complex storage arrays.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Administering enterprise Linux and Windows Server instances. Experienced in provisioning user profiles, Active Directory management, automating host updates, deploying workloads with <strong>Docker</strong>, and leveraging <strong>serverless computing</strong> and administrative <strong>automation</strong>.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Technical Operations Manager</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Aligning technical ecosystems with business goals. Organizing root cause data, optimizing infrastructure workflows, enforcing high-availability parameters, and ensuring ITIL best practices for system delivery.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Infrastructure Engineer</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Managing virtualization hypervisors like <strong>Proxmox VE</strong>, VMware ESXi, Nutanix, and KVM. Managing storage configurations (TrueNAS), scaling bare-metal server hardware, and orchestrating cloud resource structures utilizing <strong>Terraform (IaC)</strong>.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Network Expert</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Engineering multi-layered corporate networking clusters. Deploying enterprise-grade SD-WAN solutions, designing hybrid secure VPN configurations, and resolving runtime structural system anomalies.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Network Support</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Troubleshooting local and remote networking layers. Managing DNS zones, configuring DHCP tables, securing VPN tunnels (IPsec, WireGuard), and maintaining Cisco, MikroTik, or FortiGate appliances.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-1">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Cloud & Infrastructure Engineer</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Provisioning scalable, fault-tolerant infrastructure maps. Orchestrating AWS/Azure infrastructure stacks, configuring local hypervisors (VMware ESXi, Proxmox clustering), and deploying declarative Infrastructure as Code via Terraform.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Cloud Architecture</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Provisioning virtual machines, IAM policies, security layers, and storage options in cloud workloads, including AWS environments and Microsoft Azure deployments.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-2">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Tier 1 / 2 / 3 Technical Support</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Direct user interaction transforming high-level business issues into root-cause technical updates. Diagnostics spanning system clusters, direct client resolutions, high-availability data logging (Zabbix/Grafana), and rapid outage mitigation protocols.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Tier 1 / 2 / 3 Support & IT Operations</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Leveraging ITIL guidelines to handle complex service requests. Utilizing enterprise monitoring stacks (Zabbix, Prometheus, Grafana) to analyze log alerts, debug storage limits, coordinate change tickets, and write actionable wiki runbooks.</p>
                         </div>
                     </div>
                 </div>
@@ -164,11 +134,11 @@
                         WEEKLY SYSLOG
                     </span>
                     <h3 class="text-slate-200 font-bold font-mono">
-                        ⭐ Hello Weekend! What's New?
+                        ⭐ Learnings & Troubleshooting
                     </h3>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed">
-                    Every Saturday, I share a quick recap of what I've been learning, building, testing, documenting, or troubleshooting throughout the week. This collection focuses on neat, practical insights across systems administration, automation, troubleshooting runbooks, and critical configurations.
+                    Whenever I get some free time during the weekends, I enjoy writing down a short summary of things I have been experimenting with, configuring, or troubleshooting. This is a simple collection of reference steps and personal notes across systems, networking labs, and scripts that help me improve as an administrator.
                 </p>
             </div>
 
@@ -182,6 +152,7 @@
 
             <div class="space-y-4">
                 
+                <!-- Blog Card 1: Active Link (Linux commands) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(1)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Linux Commands Every Administrator Should Know</span>
@@ -191,11 +162,12 @@
                         <p>A practical Linux administration reference featuring essential commands for monitoring, troubleshooting, networking, storage, services, and system management. Each command includes a brief description, common use cases, and examples for quick daily reference.</p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Linux • System Administration • Reference</span>
-                            <a href="https://github.com/Bisrat-gebeyehu/linux-administration/blob/main/references/linux-commands-every-administrator-should-know.md" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Read Guide → &rarr;</a>
+                            <a href="https://github.com/Bisrat-gebeyehu/linux-administration/blob/main/references/linux-commands-every-administrator-should-know.md" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Read Guide &rarr;</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Blog Card 2: Inactive Link (Essential Bash Scripting Automation) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(2)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Essential Bash Scripting Automation</span>
@@ -205,28 +177,44 @@
                         <p>Clean scripting standards to automate administrative tasks. Highlights basic control structures, loops, stream manipulation with <code>grep</code> or <code>awk</code>, environment variables, and writing robust cron jobs that handle automated status reports.</p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Automation / Bash</span>
-                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Gists &rarr;</a>
+                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
                         </div>
                     </div>
                 </div>
 
-             
+                <!-- Blog Card 3: Active Link (Networking Labs) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(4)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Networking labs</span>
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Networking Labs</span>
                         <span id="icon-4" class="text-emerald-400 font-mono font-bold text-lg">+</span>
                     </button>
                     <div id="content-4" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p><p>
-A curated collection of networking labs, operational runbooks, troubleshooting guides, and infrastructure references designed to strengthen practical networking skills. Explore real-world configurations, diagnostic workflows, protocol references, and network administration techniques used in modern enterprise environments.
-</p></p>
+                        <p>
+                        A curated collection of networking labs, operational runbooks, troubleshooting guides, and infrastructure references designed to strengthen practical networking skills. Explore real-world configurations, diagnostic workflows, protocol references, and network administration techniques used in modern enterprise environments.
+                        </p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Networking • TCP/IP • System Administration </span>
-                            <a href="https://github.com/Bisrat-gebeyehu/networking-labs" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">🌐 🌐 Open Networking Labs → → &rarr;</a>
+                            <a href="https://github.com/Bisrat-gebeyehu/networking-labs" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Open Networking Labs &rarr;</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Blog Card 4: Inactive Link (AWS VPC & Azure VNet Architectures) -->
+                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                    <button onclick="toggleBlog(8)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">AWS VPC & Azure VNet Architectures</span>
+                        <span id="icon-8" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                    </button>
+                    <div id="content-8" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                        <p>A reference architecture comparing virtual network layouts in public clouds. Deep-dive into configuring subnets, internet gateways, NAT gateways, route tables, network access control lists (NACLs), security groups, virtual network peering, and establishing reliable VPN connectivity to link hybrid on-premises endpoints.</p>
+                        <div class="flex justify-between items-center pt-2">
+                            <span class="text-xs text-slate-600 font-mono">Tag: Cloud • AWS • Azure • Networking</span>
+                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5: Inactive Link (Basic SSH Hardening Practices) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(5)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Basic SSH Hardening Practices</span>
@@ -236,11 +224,12 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
                         <p>Straightforward steps to secure remote systems against brute-force intrusion. Learn how to configure public key authentication, modify default ports, disable root logins within <code>sshd_config</code>, and implement fundamental rate limits.</p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Security / Linux</span>
-                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Configs &rarr;</a>
+                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
                         </div>
                     </div>
                 </div>
 
+                <!-- Blog Card 6: Inactive Link (Understanding Essential DNS Records) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(6)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Understanding Essential DNS Records</span>
@@ -250,11 +239,12 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
                         <p>A quick-read reference breakdown explaining standard host records (A and AAAA), dynamic aliases (CNAME), mail routing protocols (MX), and general security verification parameters (TXT / SPF / DKIM) used daily in modern IT operations.</p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Networking / DNS</span>
-                            <a href="https://github.com/Bisrat-gebeyehu" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Guide &rarr;</a>
+                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
                         </div>
                     </div>
                 </div>
 
+                <!-- Blog Card 7: Inactive Link (Active Directory Troubleshooting Essentials) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(7)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Active Directory Troubleshooting Essentials</span>
@@ -264,7 +254,7 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
                         <p>Standard checklist for isolating basic enterprise identity errors. Simple steps on checking workstation trust relations, reviewing authentication failures, resolving DNS server binding hiccups, and checking update application statuses using standard commands like <code>gpupdate /force</code>.</p>
                         <div class="flex justify-between items-center pt-2">
                             <span class="text-xs text-slate-600 font-mono">Tag: Windows / AD</span>
-                            <a href="https://www.linkedin.com/in/bisrat-g-7386b6196/" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">View Runbook &rarr;</a>
+                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
                         </div>
                     </div>
                 </div>
@@ -285,7 +275,7 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
             </div>
 
             <div class="max-w-2xl mx-auto md:mx-0 font-mono text-sm space-y-4">
-                <a href="javascript:void(0);" onclick="window.location.href='mailto:'+'gebeyehubisratz'+'@gmail.com?subject=Infrastructure%20and%20Operations%20Collaboration'" class="p-5 bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/30 rounded-xl hover:border-emerald-400 hover:bg-emerald-500/15 text-emerald-400 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl group">
+                <a href="javascript:void(0);" onclick="window.location.href='mailto:'+'bisratzinabugebeyehus'+'@gmail.com?subject=Systems%20and%20Infrastructure%20Engineering%20Opportunities'" class="p-5 bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-500/30 rounded-xl hover:border-emerald-400 hover:bg-emerald-500/15 text-emerald-400 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-xl group">
                     <div>
                         <span class="font-bold block text-base text-slate-200 group-hover:text-emerald-400 transition-colors">[ Send Email ]</span>
                         <span class="text-xs text-slate-400 mt-1">Click to launch your default email app.</span>
@@ -342,11 +332,11 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
             }
         }
 
-        // Track data data matrix mapping
+        // Track data matching user resume skills (Linux, Windows Server, Proxmox, AWS/Azure VNets/VPCs, ITIL)
         const trackData = {
-            sysadmin: "Active track profile highlights: 4 years managing Linux (Ubuntu/CentOS) and Windows Server environments. Specialized in Active Directory, Microsoft 365 migration, automated system patching, user provisioning, access control lists, network shares, and server volume storage management.",
-            infra: "Active track profile highlights: Designing on-premises, redundant, and hybrid infrastructure deployments. Provisioning infrastructure components via public cloud stacks (AWS/Azure), hybrid VPN configurations, IAM least-privilege configurations, SD-WAN networks, VPC planning, hypervisors (VMware ESXi, Proxmox clustering), and custom declarative Terraform templates.",
-            ops: "Active track profile highlights: Orchestration of high-availability monitoring stacks (Zabbix, Grafana, Prometheus). Comprehensive incident management response, problem management, ITIL service design, and systematic Tier 1, 2, and 3 technical support execution. Managing straightforward helpdesk routing up to complex cross-platform environment diagnostics."
+            sysadmin: "Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability. Practiced in containerizing workloads using Docker and modernizing setups with serverless computing and script automation.",
+            infra: "Active track profile highlights: Virtualization, storage, and cloud infrastructure deployment. Strong hands-on competence running Proxmox VE, VMware ESXi, KVM, and Nutanix hypervisors. Managing storage nodes (TrueNAS), cluster networking, bare-metal servers, and high-availability stacks, utilizing Terraform for Infrastructure as Code (IaC) provisioning.",
+            ops: "Active track profile highlights: Multi-tier technical operations and incident resolution following ITIL guidelines. Continuous performance monitoring (Zabbix, Prometheus, Grafana, CloudWatch), analyzing logs to uncover root causes, managing routing/switching setups, and authoring clear troubleshooting documentation."
         };
 
         function selectTrack(trackKey) {
@@ -358,7 +348,7 @@ A curated collection of networking labs, operational runbooks, troubleshooting g
             targetBtn.classList.remove('border-slate-800', 'bg-slate-950', 'text-slate-400');
             targetBtn.classList.add('border-emerald-500/40', 'bg-emerald-500/10', 'text-emerald-400');
             
-            document.getElementById('track-desc').innerText = trackData[trackKey];
+            document.getElementById('track-desc').innerHTML = trackData[trackKey];
         }
     </script>
 </body>
