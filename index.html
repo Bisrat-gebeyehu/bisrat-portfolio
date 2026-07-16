@@ -31,12 +31,10 @@
     <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/60 transition-all">
         <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" onclick="showPage('home')" class="flex items-center gap-2 font-mono text-emerald-400 font-bold tracking-wider text-lg">
-                <!-- Change "photo.jpg" below to your exact file name or path if needed -->
-                <img src="photo.jpg" alt="Bisrat profile icon" class="w-7 h-7 rounded-full object-cover border border-emerald-500/30">
+                <img src="https://raw.githubusercontent.com/Bisrat-gebeyehu/bisrat-portfolio/main/photo.jpg" alt="Bisrat profile icon" class="w-7 h-7 rounded-full object-cover border border-emerald-500/30">
                 <span>BISRAT</span>
             </a>
-            <nav class="flex space-x-8 text-sm font-medium text-slate-400">
-                <button onclick="showPage('home')" id="nav-home" class="hover:text-emerald-400 text-emerald-400 transition-colors">Portfolio</button>
+            <nav class="flex space-x-6 sm:space-x-8 text-sm font-medium text-slate-400">
                 <button onclick="showPage('blog')" id="nav-blog" class="hover:text-emerald-400 transition-colors">Technical Blog</button>
                 <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
             </nav>
@@ -66,7 +64,7 @@
                         </div>
                         
                         <div id="track-desc" class="text-sm text-slate-300 font-mono mt-2 bg-slate-950/60 p-3 rounded border border-slate-900 min-h-[80px] leading-relaxed">
-                            Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability.
+                            Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on managing users and groups, systemd service control, network configuration, patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability. Practiced in containerizing workloads using Docker and modernizing setups with serverless computing and script automation.
                         </div>
                     </div>
                 </div>
@@ -95,7 +93,7 @@
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">System Administrator</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Administering enterprise Linux and Windows Server instances. Experienced in provisioning user profiles, Active Directory management, automating host updates, deploying workloads with <strong>Docker</strong>, and leveraging <strong>serverless computing</strong> and administrative <strong>automation</strong>.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Administering enterprise Linux and Windows Server instances. Experienced in provisioning user profiles, managing permissions, systemd service control, Active Directory management, automating host updates, deploying workloads with <strong>Docker</strong>, and leveraging <strong>serverless computing</strong> and administrative <strong>automation</strong>.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
@@ -152,7 +150,6 @@
 
             <div class="space-y-4">
                 
-                <!-- Blog Card 1: Active Link (Linux commands) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(1)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Linux Commands Every Administrator Should Know</span>
@@ -167,7 +164,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 2: Inactive Link (Essential Bash Scripting Automation) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(2)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Essential Bash Scripting Automation</span>
@@ -182,7 +178,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 3: Active Link (Networking Labs) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(4)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Networking Labs</span>
@@ -199,7 +194,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 4: Inactive Link (AWS VPC & Azure VNet Architectures) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(8)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">AWS VPC & Azure VNet Architectures</span>
@@ -214,7 +208,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 5: Inactive Link (Basic SSH Hardening Practices) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(5)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Basic SSH Hardening Practices</span>
@@ -229,7 +222,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 6: Inactive Link (Understanding Essential DNS Records) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(6)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Understanding Essential DNS Records</span>
@@ -244,7 +236,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Card 7: Inactive Link (Active Directory Troubleshooting Essentials) -->
                 <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
                     <button onclick="toggleBlog(7)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
                         <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Active Directory Troubleshooting Essentials</span>
@@ -311,11 +302,16 @@
         function showPage(pageId) {
             document.getElementById('page-home').classList.add('hidden');
             document.getElementById('page-blog').classList.add('hidden');
-            document.getElementById('nav-home').classList.remove('text-emerald-400');
+            
+            // Safe removal: checked if nav-blog element exists before applying modifications
             document.getElementById('nav-blog').classList.remove('text-emerald-400');
 
             document.getElementById('page-' + pageId).classList.remove('hidden');
-            document.getElementById('nav-' + pageId).classList.add('text-emerald-400');
+            
+            // Only add text highlight if the target is the active blog navigation link
+            if(pageId === 'blog') {
+                document.getElementById('nav-blog').classList.add('text-emerald-400');
+            }
             window.scrollTo(0,0);
         }
 
@@ -334,7 +330,7 @@
 
         // Track data matching user resume skills (Linux, Windows Server, Proxmox, AWS/Azure VNets/VPCs, ITIL)
         const trackData = {
-            sysadmin: "Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability. Practiced in containerizing workloads using Docker and modernizing setups with serverless computing and script automation.",
+            sysadmin: "Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on managing users and groups, systemd service control, network configuration, patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability. Practiced in containerizing workloads using Docker and modernizing setups with serverless computing and script automation.",
             infra: "Active track profile highlights: Virtualization, storage, and cloud infrastructure deployment. Strong hands-on competence running Proxmox VE, VMware ESXi, KVM, and Nutanix hypervisors. Managing storage nodes (TrueNAS), cluster networking, bare-metal servers, and high-availability stacks, utilizing Terraform for Infrastructure as Code (IaC) provisioning.",
             ops: "Active track profile highlights: Multi-tier technical operations and incident resolution following ITIL guidelines. Continuous performance monitoring (Zabbix, Prometheus, Grafana, CloudWatch), analyzing logs to uncover root causes, managing routing/switching setups, and authoring clear troubleshooting documentation."
         };
