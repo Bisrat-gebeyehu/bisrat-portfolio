@@ -30,8 +30,8 @@
 
     <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800/60 transition-all">
         <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" onclick="showPage('home')" class="flex items-center gap-2 font-mono text-emerald-400 font-bold tracking-wider text-lg">
-                <img src="https://raw.githubusercontent.com/Bisrat-gebeyehu/bisrat-portfolio/main/photo.jpg" alt="Bisrat profile icon" class="w-7 h-7 rounded-full object-cover border border-emerald-500/30">
+            <a href="#" onclick="showPage('home')" class="flex items-center gap-2 font-mono text-emerald-400 font-bold tracking-wider text-lg" aria-label="Go to homepage">
+                <img src="https://raw.githubusercontent.com/Bisrat-gebeyehu/bisrat-portfolio/main/photo.jpg" alt="Bisrat profile icon" class="w-7 h-7 rounded-full object-cover border border-emerald-500/30" loading="eager">
                 <span>BISRAT</span>
             </a>
             <nav class="flex space-x-6 sm:space-x-8 text-sm font-medium text-slate-400">
@@ -43,8 +43,8 @@
 
     <main class="max-w-5xl mx-auto px-6">
 
-        <div id="page-home" class="space-y-16 py-12">
-            <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <section id="page-home" class="space-y-16 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Eager to Learn & Expand IT Infrastructure Knowledge
@@ -85,9 +85,9 @@
                         <p class="text-emerald-400">>> Status: 0% loss / Network Nominal</p>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="space-y-4">
+            <div class="space-y-4">
                 <h3 class="text-lg font-mono text-emerald-400">// Core Engineering Domains</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
@@ -121,11 +121,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
 
-        <div id="page-blog" class="space-y-12 py-12 hidden">
+        <section id="page-blog" class="space-y-12 py-12 hidden">
             <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl p-6">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-mono text-xs font-bold">
@@ -144,7 +144,7 @@
                 <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-1">// Linux • Core Networking • Triage</h2>
                 <h3 class="text-2xl font-bold tracking-tight text-slate-100">Knowledge Base</h3>
                 <p class="text-slate-500 text-sm mt-2 leading-relaxed">
-                    Practical reference guides, troubleshooting checklists, and standard commands for managing modern systems and resolving anomalies efficiently.
+                    Practical reference guides, troubleshooting checklists, and standard commands for managing modern Linux systems and resolving system anomalies smoothly.
                 </p>
             </div>
 
@@ -251,7 +251,7 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
 
         <hr class="border-slate-900 my-16">
