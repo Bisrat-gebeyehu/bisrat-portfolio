@@ -3,7 +3,6 @@
   "name": "bisrat-portfolio",
   "compatibility_date": "2026-07-16",
   "assets": {
-    "directory": "./",
-    "binding": "ASSETS"
+    "directory": "./"
   }
 }
