@@ -50,16 +50,17 @@
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Eager to Learn & Expand IT Infrastructure Knowledge
                     </div>
                     <h1 class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-100 leading-tight">
-                        System Administrator <span class="text-emerald-400">|</span> Infrastructure Engineer <span class="text-emerald-400">|</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">IT Operations Specialist</span>
+                        System Administrator <span class="text-emerald-400">|</span> Infrastructure Engineer <span class="text-emerald-400">|</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Network & IT Operations</span>
                     </h1>
                     <p class="text-slate-400 text-base max-w-xl leading-relaxed">
-                        I support hybrid system workflows, manage core networks, and administer enterprise virtualization stacks. I am highly focused on investigating system anomalies, optimizing services, and building stable physical, virtualized, and cloud-based environments.
+                        I support hybrid workflows, manage next-gen enterprise networks, secure perimeters, and administer virtualized stacks. Highly focused on incident mitigation, log analytics, and building resilient local and cloud architectures.
                     </p>
                     
                     <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-3">
                         <div class="flex flex-wrap gap-2">
                             <button onclick="selectTrack('sysadmin')" id="btn-sysadmin" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-emerald-500/40 bg-emerald-500/10 text-emerald-400 font-medium">System Administration</button>
                             <button onclick="selectTrack('infra')" id="btn-infra" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">Infrastructure Eng.</button>
+                            <button onclick="selectTrack('netsec')" id="btn-netsec" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">Network & Security</button>
                             <button onclick="selectTrack('ops')" id="btn-ops" class="track-btn px-3 py-1.5 rounded font-mono text-xs border border-slate-800 bg-slate-950 text-slate-400">IT Support & Operations</button>
                         </div>
                         
@@ -89,7 +90,7 @@
 
             <div class="space-y-4">
                 <h3 class="text-lg font-mono text-emerald-400">// Core Engineering Domains</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">System Administrator</h4>
@@ -104,20 +105,14 @@
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Network Support</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Troubleshooting local and remote networking layers. Managing DNS zones, configuring DHCP tables, securing VPN tunnels (IPsec, WireGuard), and maintaining Cisco, MikroTik, or FortiGate appliances.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">Network &amp; Security</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Hands-on installation and configuration of local and cloud-based network topologies (**LAN/WAN**, **AWS VPC**, **Azure VNet**). Skilled in **Firewall administration** and advanced troubleshooting across **pfSense, FortiGate, MikroTik, and Cisco** appliances. Implementing **VPN routing, VLAN partitioning, Access Control Lists (ACLs), NAC, ZTNA architectures**, and securing modern traffic components using **SSL/TLS** policies.</p>
                         </div>
                     </div>
-                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Cloud Architecture</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Provisioning virtual machines, IAM policies, security layers, and storage options in cloud workloads, including AWS environments and Microsoft Azure deployments.</p>
-                        </div>
-                    </div>
-                    <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between md:col-span-2 lg:col-span-2">
-                        <div>
-                            <h4 class="text-slate-200 font-bold mb-2 text-base">Tier 1 / 2 / 3 Support & IT Operations</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Leveraging ITIL guidelines to handle complex service requests. Utilizing enterprise monitoring stacks (Zabbix, Prometheus, Grafana) to analyze log alerts, debug storage limits, coordinate change tickets, and write actionable wiki runbooks.</p>
+                            <h4 class="text-slate-200 font-bold mb-2 text-base">IT Support &amp; Operations</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">Operating within comprehensive **ITIL framework** guidelines and **Agile method systems**. Delivering structured multi-tier support handling spanning **Incident and Change Management workflows**. Proactively managing systems via enterprise monitoring tools, comprehensive **log analytics**, centralized ticketing platforms, and authoring clear, structural markdown wiki documentation runs.</p>
                         </div>
                     </div>
                 </div>
@@ -328,11 +323,12 @@
             }
         }
 
-        // Track data matching user resume skills (Linux, Windows Server, Proxmox, AWS/Azure VNets/VPCs, ITIL)
+        // Track data matching user resume skills
         const trackData = {
             sysadmin: "Active track profile highlights: Multi-platform system administration specializing in Linux (Ubuntu, Debian, CentOS) and Windows Server environments. Focused on managing users and groups, systemd service control, network configuration, patch execution, Active Directory management, IIS/NGINX web servers, and maintaining reliable application availability. Practiced in containerizing workloads using Docker and modernizing setups with serverless computing and script automation.",
             infra: "Active track profile highlights: Virtualization, storage, and cloud infrastructure deployment. Strong hands-on competence running Proxmox VE, VMware ESXi, KVM, and Nutanix hypervisors. Managing storage nodes (TrueNAS), cluster networking, bare-metal servers, and high-availability stacks, utilizing Terraform for Infrastructure as Code (IaC) provisioning.",
-            ops: "Active track profile highlights: Multi-tier technical operations and incident resolution following ITIL guidelines. Continuous performance monitoring (Zabbix, Prometheus, Grafana, CloudWatch), analyzing logs to uncover root causes, managing routing/switching setups, and authoring clear troubleshooting documentation."
+            netsec: "Active track profile highlights: Hands-on deployment and configuration of enterprise LAN/WAN networks, local infrastructure, and cloud topologies. Experienced with firewall administration and network troubleshooting across pfSense, FortiGate, MikroTik, and Cisco systems. Focused on access controls, NAC, ZTNA architectures, VPN routing, VLAN segments, SSL/TLS setups, IP address management (IPAM), AWS VPC, and Azure VNet environments.",
+            ops: "Active track profile highlights: Structured IT support operations and incident mitigation following ITIL guidelines and Agile workflows. Responsible for handling incident and change management processes across multiple levels, log analysis for root cause discovery, systematic ticketing workflows, and authoring clear documentation and engineering runbooks."
         };
 
         function selectTrack(trackKey) {
