@@ -35,6 +35,7 @@
                 <span>BISRAT</span>
             </a>
             <nav class="flex space-x-6 sm:space-x-8 text-sm font-medium text-slate-400">
+                <button onclick="showPage('home')" id="nav-home" class="hover:text-emerald-400 transition-colors text-emerald-400">Portfolio</button>
                 <button onclick="showPage('blog')" id="nav-blog" class="hover:text-emerald-400 transition-colors">Technical Blog</button>
                 <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
             </nav>
@@ -43,8 +44,9 @@
 
     <main class="max-w-5xl mx-auto px-6">
 
+        <!-- ================= HOME PAGE SECTION ================= -->
         <section id="page-home" class="space-y-16 py-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="grid grid-cols-1 grid-bg lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Eager to Learn & Expand IT Infrastructure Knowledge
@@ -83,14 +85,14 @@
                         <p class="text-emerald-500/90">$ packet_loss --check core-router-01</p>
                         <p class="text-slate-400">PING core-router-01 (10.0.1.1): 56 data bytes</p>
                         <p class="text-slate-400">64 bytes from 10.0.1.1: icmp_seq=0 ttl=64 time=0.421 ms</p>
-                        <p class="text-emerald-400">>> Status: 0% loss / Network Nominal</p>
+                        <p class="text-emerald-400">&gt;&gt; Status: 0% loss / Network Nominal</p>
                     </div>
                 </div>
             </div>
 
             <div class="space-y-4">
                 <h3 class="text-lg font-mono text-emerald-400">// Core Engineering Domains</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">System Administrator</h4>
@@ -106,13 +108,13 @@
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">Network &amp; Security</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Hands-on installation and configuration of local and cloud-based network topologies (**LAN/WAN**, **AWS VPC**, **Azure VNet**). Skilled in **Firewall administration** and advanced troubleshooting across **pfSense, FortiGate, MikroTik, and Cisco** appliances. Implementing **VPN routing, VLAN partitioning, Access Control Lists (ACLs), NAC, ZTNA architectures**, and securing modern traffic components using **SSL/TLS** policies.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Hands-on installation and configuration of local and cloud-based network topologies (<strong>LAN/WAN</strong>, <strong>AWS VPC</strong>, <strong>Azure VNet</strong>). Skilled in <strong>Firewall administration</strong> and advanced troubleshooting across <strong>pfSense, FortiGate, MikroTik, and Cisco</strong> appliances. Implementing <strong>VPN routing, VLAN partitioning, Access Control Lists (ACLs), NAC, ZTNA architectures</strong>, IP address management (IPAM), and securing modern traffic components using <strong>SSL/TLS</strong> policies.</p>
                         </div>
                     </div>
                     <div class="bg-slate-900/20 border border-slate-800/80 p-5 rounded-xl flex flex-col justify-between">
                         <div>
                             <h4 class="text-slate-200 font-bold mb-2 text-base">IT Support &amp; Operations</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">Operating within comprehensive **ITIL framework** guidelines and **Agile method systems**. Delivering structured multi-tier support handling spanning **Incident and Change Management workflows**. Proactively managing systems via enterprise monitoring tools, comprehensive **log analytics**, centralized ticketing platforms, and authoring clear, structural markdown wiki documentation runs.</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Executing technical support operations following <strong>ITIL framework</strong> guidelines and <strong>Agile workflows</strong>. Handling multi-tier service workflows spanning <strong>Incident and Change Management tracks</strong>. Managing production availability through monitoring tools, structural <strong>log analysis</strong>, unified ticketing platforms, and maintaining comprehensive documentation libraries.</p>
                         </div>
                     </div>
                 </div>
@@ -120,137 +122,138 @@
         </section>
 
 
+        <!-- ================= REFINED RESTRUCTURED TECHNICAL BLOG SECTION ================= -->
         <section id="page-blog" class="space-y-12 py-12 hidden">
+            <!-- Blog Header Intro Panel -->
             <div class="bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-xl p-6">
                 <div class="flex items-center gap-3 mb-2">
-                    <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-mono text-xs font-bold">
-                        WEEKLY SYSLOG
+                    <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-mono text-xs font-bold uppercase tracking-wider">
+                        Syslog Analytics & Feed
                     </span>
-                    <h3 class="text-slate-200 font-bold font-mono">
-                        ⭐ Learnings & Troubleshooting
+                    <h3 class="text-slate-200 font-bold font-mono text-sm sm:text-base">
+                        ⭐ Industry Trends, Event Logs & Field Documentation
                     </h3>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed">
-                    Whenever I get some free time during the weekends, I enjoy writing down a short summary of things I have been experimenting with, configuring, or troubleshooting. This is a simple collection of reference steps and personal notes across systems, networking labs, and scripts that help me improve as an administrator.
+                    A centralized pipeline for breaking down technical frameworks, tracing system paradigms, mapping cloud advancements, and logging telemetry notes from infrastructure configurations.
                 </p>
             </div>
 
-            <div>
-                <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-1">// Linux • Core Networking • Triage</h2>
-                <h3 class="text-2xl font-bold tracking-tight text-slate-100">Knowledge Base</h3>
-                <p class="text-slate-500 text-sm mt-2 leading-relaxed">
-                    Practical reference guides, troubleshooting checklists, and standard commands for managing modern Linux systems and resolving system anomalies smoothly.
-                </p>
-            </div>
-
-            <div class="space-y-4">
+            <!-- Two Column Layout: Main Feed + Sidebar Components -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(1)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Linux Commands Every Administrator Should Know</span>
-                        <span id="icon-1" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-1" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>A practical Linux administration reference featuring essential commands for monitoring, troubleshooting, networking, storage, services, and system management. Each command includes a brief description, common use cases, and examples for quick daily reference.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Linux • System Administration • Reference</span>
-                            <a href="https://github.com/Bisrat-gebeyehu/linux-administration/blob/main/references/linux-commands-every-administrator-should-know.md" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Read Guide &rarr;</a>
+                <!-- LEFT COLUMN: Main Articles Feed (Tech Trends & Insights) -->
+                <div class="lg:col-span-8 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-1">// Tech Trends & Insights</h2>
+                        <h3 class="text-2xl font-bold tracking-tight text-slate-100">Deep Dives & System Knowledge Base</h3>
+                    </div>
+
+                    <!-- Dynamic Accordion Cards (Re-architected from previous design links) -->
+                    <div class="space-y-4">
+                        <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                            <button onclick="toggleBlog(1)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                                <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Linux Commands Every Administrator Should Know</span>
+                                <span id="icon-1" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                            </button>
+                            <div id="content-1" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                                <p>A practical Linux administration reference featuring essential commands for monitoring, troubleshooting, networking, storage, services, and system management. Each command includes brief operational breakdowns for daily administration triage.</p>
+                                <div class="flex justify-between items-center pt-2">
+                                    <span class="text-xs text-slate-600 font-mono">Core Frameworks • Triage</span>
+                                    <a href="https://github.com/Bisrat-gebeyehu/linux-administration/blob/main/references/linux-commands-every-administrator-should-know.md" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Read Structural Resource &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                            <button onclick="toggleBlog(2)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                                <span class="text-slate-200 font-medium font-mono text-sm md:text-base">AWS VPC & Azure VNet Topologies compared to Edge Mesh Networks</span>
+                                <span id="icon-2" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                            </button>
+                            <div id="content-2" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                                <p>A deep architectural evaluation mapping virtualized network subnets, NAT clusters, boundary controls (NACLs), route tables, and border transport structures. Explores how cloud networking layers translate into micro-segmented zero trust systems.</p>
+                                <div class="flex justify-between items-center pt-2">
+                                    <span class="text-xs text-slate-600 font-mono">Cloud Networks • Infrastructure</span>
+                                    <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
+                            <button onclick="toggleBlog(3)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
+                                <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Understanding Essential DNS Cryptography & Host Verification</span>
+                                <span id="icon-3" class="text-emerald-400 font-mono font-bold text-lg">+</span>
+                            </button>
+                            <div id="content-3" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
+                                <p>Breaking down operational variables for record propagation paths (A, AAAA, CNAME) combined with modern zone integrity vectors such as TXT-based cryptographic verification profiles (SPF, DKIM, DMARC).</p>
+                                <div class="flex justify-between items-center pt-2">
+                                    <span class="text-xs text-slate-600 font-mono">Security Parameters • Protocols</span>
+                                    <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(2)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Essential Bash Scripting Automation</span>
-                        <span id="icon-2" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-2" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>Clean scripting standards to automate administrative tasks. Highlights basic control structures, loops, stream manipulation with <code>grep</code> or <code>awk</code>, environment variables, and writing robust cron jobs that handle automated status reports.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Automation / Bash</span>
-                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
+                <!-- RIGHT COLUMN: Side Info Track (News, Events, and Repo Spotlights) -->
+                <div class="lg:col-span-4 space-y-8 lg:border-l lg:border-slate-800/80 lg:pl-6">
+                    
+                    <!-- PILLAR: Industry News Commentary -->
+                    <div class="space-y-4">
+                        <h4 class="text-xs font-mono uppercase tracking-widest text-emerald-400">// Quick News Bytes</h4>
+                        <div class="space-y-3">
+                            <div class="p-3 bg-slate-900/40 border border-slate-800 rounded-lg text-xs space-y-1">
+                                <div class="flex justify-between text-slate-500 font-mono"><span class="text-red-400 font-bold">UPDATED</span><span>Nov 2026</span></div>
+                                <p class="text-slate-300">AWS re:Invent 2026 All Builders Welcome Grant call opens registration for early-career cloud engineers.</p>
+                                <div class="pt-1 flex gap-2"><a href="https://lnkd.in/gmRxc8CR" target="_blank" class="text-emerald-400 hover:underline">Apply Here &rarr;</a> <a href="https://shorturl.at/BzYW6" target="_blank" class="text-slate-500 hover:underline">Guide</a></div>
+                            </div>
+                            <div class="p-3 bg-slate-900/40 border border-slate-800 rounded-lg text-xs space-y-1">
+                                <div class="flex justify-between text-slate-500 font-mono"><span class="text-cyan-400">ANNOUNCEMENT</span><span>July 2026</span></div>
+                                <p class="text-slate-300">Werner Vogels secured as keynote presenter for AWS Community Day Poland.</p>
+                                <a href="https://lnkd.in/d_bhZDda" target="_blank" class="text-emerald-400 hover:underline inline-block pt-1">RSVP Event Link &rarr;</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(4)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Networking Labs</span>
-                        <span id="icon-4" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-4" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>
-                        A curated collection of networking labs, operational runbooks, troubleshooting guides, and infrastructure references designed to strengthen practical networking skills. Explore real-world configurations, diagnostic workflows, protocol references, and network administration techniques used in modern enterprise environments.
-                        </p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Networking • TCP/IP • System Administration </span>
-                            <a href="https://github.com/Bisrat-gebeyehu/networking-labs" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline">Open Networking Labs &rarr;</a>
+                    <!-- PILLAR: Event Summaries -->
+                    <div class="space-y-4">
+                        <h4 class="text-xs font-mono uppercase tracking-widest text-emerald-400">// Event Logs</h4>
+                        <div class="space-y-3">
+                            <div class="p-4 bg-slate-950/80 border border-slate-900 rounded-lg space-y-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] bg-cyan-950 border border-cyan-800 text-cyan-400 font-mono font-bold tracking-wide uppercase">Summit Log</span>
+                                <h5 class="text-slate-200 font-bold text-xs font-mono">AWS Community Day Poland</h5>
+                                <p class="text-[11px] text-slate-400">Evaluated structural cluster optimization workflows and enterprise serverless scale architectures.</p>
+                            </div>
+                            <div class="p-4 bg-slate-950/80 border border-slate-900 rounded-lg space-y-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] bg-amber-950 border border-amber-800 text-amber-400 font-mono font-bold tracking-wide uppercase">Community Lab</span>
+                                <h5 class="text-slate-200 font-bold text-xs font-mono">Infrastructure Meetup #18</h5>
+                                <p class="text-[11px] text-slate-400">Participated in roundtables detailing hypervisor memory-ballooning automation scripts.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(8)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">AWS VPC & Azure VNet Architectures</span>
-                        <span id="icon-8" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-8" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>A reference architecture comparing virtual network layouts in public clouds. Deep-dive into configuring subnets, internet gateways, NAT gateways, route tables, network access control lists (NACLs), security groups, virtual network peering, and establishing reliable VPN connectivity to link hybrid on-premises endpoints.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Cloud • AWS • Azure • Networking</span>
-                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
+                    <!-- PRO TIP: Featured Project Spotlight -->
+                    <div class="space-y-4">
+                        <h4 class="text-xs font-mono uppercase tracking-widest text-emerald-400">// Repository Spotlight</h4>
+                        <div class="p-4 bg-emerald-500/5 border border-emerald-500/20 rounded-xl space-y-3">
+                            <div class="font-mono text-xs text-emerald-400 font-bold">[ Featured Production Lab ]</div>
+                            <h5 class="text-slate-200 font-bold text-sm">Networking Labs & Runbooks</h5>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                Curious to see how this technical commentary matches my physical work? Explore my active configurations inside my environment testing suite.
+                            </p>
+                            <a href="https://github.com/Bisrat-gebeyehu/networking-labs" target="_blank" class="inline-block text-xs font-mono bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 px-3 py-1.5 rounded border border-emerald-500/30 transition-all w-full text-center">
+                                Review Live Labs Codebase &rarr;
+                            </a>
                         </div>
                     </div>
-                </div>
 
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(5)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Basic SSH Hardening Practices</span>
-                        <span id="icon-5" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-5" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>Straightforward steps to secure remote systems against brute-force intrusion. Learn how to configure public key authentication, modify default ports, disable root logins within <code>sshd_config</code>, and implement fundamental rate limits.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Security / Linux</span>
-                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(6)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Understanding Essential DNS Records</span>
-                        <span id="icon-6" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-6" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>A quick-read reference breakdown explaining standard host records (A and AAAA), dynamic aliases (CNAME), mail routing protocols (MX), and general security verification parameters (TXT / SPF / DKIM) used daily in modern IT operations.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Networking / DNS</span>
-                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border border-slate-800 bg-slate-900/10 rounded-lg overflow-hidden">
-                    <button onclick="toggleBlog(7)" class="w-full text-left p-4 flex justify-between items-center bg-slate-900/30 hover:bg-slate-900/60 transition-colors">
-                        <span class="text-slate-200 font-medium font-mono text-sm md:text-base">Active Directory Troubleshooting Essentials</span>
-                        <span id="icon-7" class="text-emerald-400 font-mono font-bold text-lg">+</span>
-                    </button>
-                    <div id="content-7" class="hidden p-5 border-t border-slate-800/80 bg-slate-950/40 text-sm text-slate-400 space-y-3">
-                        <p>Standard checklist for isolating basic enterprise identity errors. Simple steps on checking workstation trust relations, reviewing authentication failures, resolving DNS server binding hiccups, and checking update application statuses using standard commands like <code>gpupdate /force</code>.</p>
-                        <div class="flex justify-between items-center pt-2">
-                            <span class="text-xs text-slate-600 font-mono">Tag: Windows / AD</span>
-                            <span class="text-xs font-mono text-slate-600 select-none">Under Review on GitHub</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-
         <hr class="border-slate-900 my-16">
 
+        <!-- ================= CONTACT/PORTAL SECTION ================= -->
         <section id="contact" class="pb-24 scroll-mt-20">
             <div class="mb-8">
                 <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2">// Interconnect Portal</h2>
@@ -292,21 +295,19 @@
         </div>
     </footer>
 
+    <!-- ================= JAVASCRIPT CONTROLLERS ================= -->
     <script>
         // Tab switching logic for pages
         function showPage(pageId) {
             document.getElementById('page-home').classList.add('hidden');
             document.getElementById('page-blog').classList.add('hidden');
             
-            // Safe removal: checked if nav-blog element exists before applying modifications
+            document.getElementById('nav-home').classList.remove('text-emerald-400');
             document.getElementById('nav-blog').classList.remove('text-emerald-400');
 
             document.getElementById('page-' + pageId).classList.remove('hidden');
+            document.getElementById('nav-' + pageId).classList.add('text-emerald-400');
             
-            // Only add text highlight if the target is the active blog navigation link
-            if(pageId === 'blog') {
-                document.getElementById('nav-blog').classList.add('text-emerald-400');
-            }
             window.scrollTo(0,0);
         }
 
